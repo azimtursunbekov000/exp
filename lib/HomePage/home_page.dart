@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        leading: IconButton(
+        leading: const IconButton(
           onPressed: null,
           icon: Icon(
             Icons.arrow_back_ios,
             color: Colors.white,
           ),
         ),
-        actions: [
+        actions: const [
           Icon(Icons.clear),
         ],
-        backgroundColor: Color(0xff131921),
-        title: Column(
+        backgroundColor: const Color(0xff131921),
+        title: const Column(
           children: [
             Text(
               "Москва в кино",
@@ -45,20 +45,18 @@ class HomePage extends StatelessWidget {
                   width: 17,
                   height: 17,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 3,
                 ),
-                Text("1/"),
-                Text("10"),
+                const Text("1/"),
+                const Text("10"),
               ],
             ),
-            SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             Container(
               width: 354,
               height: 254,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
                     "assets/images/Group 1278.png",
@@ -66,60 +64,58 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Text(
+            const Text(
                 "С момента выхода на экраны советских кинотеатров фильма «Служебный роман» прошло уже более 40 лет. Картина моментально завоевала сердца публики и стала одной из самых любимых отечественных комедий."),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
                 "В Москве на улице Пятницкой находится павильон метро, размещенный на месте снесенной церкви. Напишите название церкви. Подсказкой станет стена-граффити дома, стоящего прямо у выхода метро «Новокузнецкая»."),
-            SizedBox(height: 10),
-            Expanded(
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/111.png",
-                        width: 20,
-                        height: 20,
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/111.png",
+                      width: 20,
+                      height: 20,
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        "Наш директор",
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          "Наш директор",
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 15),
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/Rectangle.png",
-                        width: 20,
-                        height: 20,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text("Наша мымра"),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 15),
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/Rectangle.png",
-                        width: 20,
-                        height: 20,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text("Мужчина в юбке"),
-                      )
-                    ],
-                  ),
-                ],
-              ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 15),
+                Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/Rectangle.png",
+                      width: 20,
+                      height: 20,
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text("Наша мымра"),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 15),
+                Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/Rectangle.png",
+                      width: 20,
+                      height: 20,
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text("Мужчина в юбке"),
+                    )
+                  ],
+                ),
+              ],
             ),
             Row(
               children: [
@@ -128,7 +124,7 @@ class HomePage extends StatelessWidget {
                     alignment: Alignment.center,
                     height: 60,
                     color: Colors.red,
-                    child: Text(
+                    child: const Text(
                       "Ответить",
                       style: TextStyle(
                         fontSize: 14,
@@ -142,10 +138,10 @@ class HomePage extends StatelessWidget {
                   child: Container(
                     alignment: Alignment.center,
                     height: 60,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xffF6F6FB),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Далее",
                       style: TextStyle(
                         fontSize: 13,
@@ -204,8 +200,8 @@ class ExpandentExample extends StatelessWidget {
                     width: 45,
                     color: Colors.white,
                   ),
-                  SizedBox(width: 10),
-                  Expanded(
+                  const SizedBox(width: 10),
+                  const Expanded(
                     child: Text(
                       "Azim 123123123123123123131231231323123131231231312312",
                       style: TextStyle(
@@ -214,7 +210,7 @@ class ExpandentExample extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.close,
                     size: 40,
                     color: Colors.white,
@@ -240,43 +236,43 @@ class Screen2 extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
-          Text(
+          const Text(
             "1111",
             style: TextStyle(fontSize: 60),
           ),
@@ -311,111 +307,177 @@ class Screen3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        leading: const IconButton(
+          onPressed: null,
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
+        actions: const [
+          Icon(Icons.clear),
+        ],
+        backgroundColor: const Color(0xff131921),
+        title: const Column(
+          children: [
+            Text(
+              "Москва в кино",
+            ),
+            Text(
+              "Москва Марины Цветаевой",
+              style: TextStyle(
+                color: Color(0xffFFFFFF),
+                fontSize: 15,
+              ),
+            ),
+          ],
+        ),
       ),
       body: Column(
         children: [
-          Expanded(
+          Padding(
+            padding: const EdgeInsets.all(10),
             child: ListView(
               children: [
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
+                Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/group.png",
+                      width: 17,
+                      height: 17,
+                    ),
+                    const SizedBox(
+                      width: 3,
+                    ),
+                    const Text("1/"),
+                    const Text("10"),
+                  ],
                 ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
+                const SizedBox(
+                  height: 10,
                 ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
+                Container(
+                  width: 354,
+                  height: 254,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                        "assets/images/Group 1278.png",
+                      ),
+                    ),
+                  ),
                 ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
+                const Text(
+                    "С момента выхода на экраны советских кинотеатров фильма «Служебный роман» прошло уже более 40 лет. Картина моментально завоевала сердца публики и стала одной из самых любимых отечественных комедий."),
+                const SizedBox(height: 10),
+                const Text(
+                    "В Москве на улице Пятницкой находится павильон метро, размещенный на месте снесенной церкви. Напишите название церкви. Подсказкой станет стена-граффити дома, стоящего прямо у выхода метро «Новокузнецкая»."),
+                const SizedBox(height: 10),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/111.png",
+                            width: 20,
+                            height: 20,
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              "Наш директор",
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 15),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/Rectangle.png",
+                            width: 20,
+                            height: 20,
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text("Наша мымра"),
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 15),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/Rectangle.png",
+                            width: 20,
+                            height: 20,
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text("Мужчина в юбке"),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 60,
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 60,
+                        color: Colors.red,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
-                ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
-                ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
-                ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
-                ),
-                Text(
-                  "1111",
-                  style: TextStyle(fontSize: 60),
-                ),
-
-                // --------------------
               ],
             ),
           ),
-          Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: 60,
-                  color: Colors.blue,
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  height: 60,
-                  color: Colors.red,
-                ),
-              ),
-            ],
-          ),
         ],
       ),
     );
   }
 }
 
-class Screen4 extends StatelessWidget {
-  const Screen4({super.key});
+// class Screen4 extends StatelessWidget {
+//   const Screen4({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-      ),
-      body: Row(
-        children: [
-          Icon(
-            Icons.favorite,
-            color: Colors.red,
-            size: 40,
-          ),
-          Icon(
-            Icons.comment,
-            size: 40,
-          ),
-          Icon(
-            Icons.ac_unit,
-            size: 40,
-          ),
-          Spacer(),
-          Icon(
-            Icons.share,
-            size: 40,
-          ),
-        ],
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.blue,
+//       ),
+//       body: const Row(
+//         children: [
+//           Icon(
+//             Icons.favorite,
+//             color: Colors.red,
+//             size: 40,
+//           ),
+//           Icon(
+//             Icons.comment,
+//             size: 40,
+//           ),
+//           Icon(
+//             Icons.ac_unit,
+//             size: 40,
+//           ),
+//           Spacer(),
+//           Icon(
+//             Icons.share,
+//             size: 40,
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
