@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({
-    super.key,
-  });
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,8 +35,8 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
+        padding: const EdgeInsets.all(10),
+        child: ListView(
           children: [
             Row(
               children: [
@@ -51,12 +49,7 @@ class HomePage extends StatelessWidget {
                   width: 3,
                 ),
                 Text("1/"),
-                Text(
-                  "10",
-                  style: TextStyle(
-                    color: Color(0xff131921),
-                  ),
-                ),
+                Text("10"),
               ],
             ),
             SizedBox(
@@ -75,14 +68,10 @@ class HomePage extends StatelessWidget {
             ),
             Text(
                 "С момента выхода на экраны советских кинотеатров фильма «Служебный роман» прошло уже более 40 лет. Картина моментально завоевала сердца публики и стала одной из самых любимых отечественных комедий."),
-            SizedBox(
-              height: 10,
-            ),
+            SizedBox(height: 10),
             Text(
                 "В Москве на улице Пятницкой находится павильон метро, размещенный на месте снесенной церкви. Напишите название церкви. Подсказкой станет стена-граффити дома, стоящего прямо у выхода метро «Новокузнецкая»."),
-            SizedBox(
-              height: 10,
-            ),
+            SizedBox(height: 10),
             Expanded(
               child: Column(
                 children: [
@@ -101,9 +90,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
+                  SizedBox(height: 15),
                   Row(
                     children: [
                       Image.asset(
@@ -117,9 +104,7 @@ class HomePage extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
+                  SizedBox(height: 15),
                   Row(
                     children: [
                       Image.asset(
@@ -173,6 +158,263 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ExpandentExample extends StatelessWidget {
+  const ExpandentExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.black,
+                  height: 60,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.green,
+                  height: 60,
+                ),
+              ),
+            ],
+          ),
+          Center(
+            child: Container(
+              height: 200,
+              width: 500,
+              color: Colors.red,
+              child: Row(
+                children: [
+                  Container(
+                    height: 45,
+                    width: 45,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      "Azim 123123123123123123131231231323123131231231312312",
+                      style: TextStyle(
+                        fontSize: 30,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ),
+                  Icon(
+                    Icons.close,
+                    size: 40,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Screen2 extends StatelessWidget {
+  const Screen2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+      ),
+      body: ListView(
+        children: [
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+          Text(
+            "1111",
+            style: TextStyle(fontSize: 60),
+          ),
+
+          // --------------------
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: 60,
+                  color: Colors.blue,
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  height: 60,
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Screen3 extends StatelessWidget {
+  const Screen3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView(
+              children: [
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+                Text(
+                  "1111",
+                  style: TextStyle(fontSize: 60),
+                ),
+
+                // --------------------
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: 60,
+                  color: Colors.blue,
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  height: 60,
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Screen4 extends StatelessWidget {
+  const Screen4({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+      ),
+      body: Row(
+        children: [
+          Icon(
+            Icons.favorite,
+            color: Colors.red,
+            size: 40,
+          ),
+          Icon(
+            Icons.comment,
+            size: 40,
+          ),
+          Icon(
+            Icons.ac_unit,
+            size: 40,
+          ),
+          Spacer(),
+          Icon(
+            Icons.share,
+            size: 40,
+          ),
+        ],
       ),
     );
   }
